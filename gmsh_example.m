@@ -1,11 +1,11 @@
 
 %path and file declarations (can likely be handled better in future)
 %path with .geo (gmsh) files
-geo_path = 'C:\Users\icberg\git_installs\GIBBON\gmsh_integration\Gmsh_Example\';
+geo_path = 'Gmsh_Example\';
 %list of .geo files used to generate meshes
 geo_files = {'rigid_dome.geo','square_membrane.geo'};
 %path to gmsh generated mesh files
-mesh_path = 'C:\Users\icberg\git_installs\GIBBON\gmsh_integration\Gmsh_Example\';
+mesh_path = 'Gmsh_Example\';
 %list of gmsh generated mesh files
 files = {'rigid_dome.msh','square_membrane.msh'};
 %path to an installation of gmsh
@@ -40,7 +40,7 @@ for i = 1:size(geo_files,2)
 end
 
 %%
-defaultFolder = 'C:\Users\icberg\git_installs\GIBBON\gmsh_integration\Gmsh_Example\output\';
+defaultFolder = 'Gmsh_Example\output\';
 savePath=fullfile(defaultFolder);
 
 % Defining file names
